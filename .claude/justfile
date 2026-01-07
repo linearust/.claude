@@ -1,5 +1,8 @@
 # Claude Code QA automation
 
+# Default: run all QA tasks
+default: all
+
 # Run a specific QA task
 qa task:
     @echo ""

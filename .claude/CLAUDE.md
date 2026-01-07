@@ -16,7 +16,7 @@
 
 ---
 
-## Style
+## Code Style
 
 - **Everything required** — no optional parameters or defaults
 - **Fail fast** — clear errors at entry, no silent fallbacks
@@ -26,21 +26,26 @@
 
 ---
 
-## Routing
+## Web
 
-Routes by interaction type:
+### Routing: Type-Based
 
-| Prefix | Purpose |
-|--------|---------|
-| `/pages/*` | Full page renders |
-| `/forms/*` | Form submissions |
-| `/actions/*` | HTMX partial updates |
+Handlers organized by response type, then by resource.
 
-**Conventions:**
+| Type | URL | Returns |
+|------|-----|---------|
+| Pages | `/{resource}` | Full HTML document (via layout) |
+| Forms | `/forms/{resource}` | Redirect or re-render |
+| Actions | `/actions/{resource}` | Partial/empty response (HTMX) |
+
+Other types may be added as needed.
+
+### Routing: Conventions
+
 - RESTful methods: GET, POST, DELETE, PATCH, PUT
 - Path parameters: `/todos/{todo_id}`
-- Handler names: `method_path` → `get_root`, `post_forms_todos`, `delete_actions_todos_id`
-- Module structure mirrors routes: `handlers/pages/`, `handlers/forms/`, `handlers/actions/`
+- Handler names: `method_[type_]resource_[param]`
+- Handler modules by route type
 
 ---
 
