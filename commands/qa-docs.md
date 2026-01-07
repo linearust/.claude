@@ -1,23 +1,25 @@
-Fix outdated or redundant documentation. Run tests after changes if they exist.
+Verify documentation accuracy.
 
 ## Goal
 
-Documentation matches current code — minimal, only why.
+Documentation matches code — minimal, only explain why.
 
 ## Checks
 
-| Check | Pass Criteria |
-|-------|---------------|
+| Check | Pass |
+|-------|------|
 | No restating | Comments don't repeat what code does |
-| Intent only | Remaining comments explain why or non-obvious logic |
-| Accuracy | All documented features match implementations |
-| No dead refs | No broken references or obsolete content |
+| Accuracy | Documented behavior matches implementation |
+| No dead refs | No broken or obsolete references |
 
 ## Process
 
-1. Scan all comments and docs
-2. Compare against actual code
-3. Delete or update as needed
-4. Run tests if they exist
+1. Scan comments and docs against code
+2. Delete redundant, fix inaccurate
+3. Run tests if they exist
+
+## Output
+
+Report: `file — issue — fix`
 
 Do not ask for confirmation. Analyze and implement directly.

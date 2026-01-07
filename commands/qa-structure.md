@@ -1,22 +1,25 @@
-Analyze directory structure and file organization. Run tests after changes if they exist.
+Verify file organization.
 
 ## Goal
 
-Each file has a single responsibility; directory tree reveals what code IS.
+Directory tree reveals what code IS — single responsibility, canonical locations.
 
 ## Checks
 
-| Check | Pass Criteria |
-|-------|---------------|
+| Check | Pass |
+|-------|------|
 | Single responsibility | No file mixes unrelated concerns |
-| Naming reveals purpose | Directory names describe what code IS, not what it's about |
 | Canonical locations | Each file type has one correct location |
+| Flat when possible | No unnecessary nesting |
 
 ## Process
 
-1. Map current structure
-2. Identify violations
-3. Refactor to fix
-4. Run tests if they exist
+1. Map structure and identify violations
+2. Move or split files
+3. Run tests if they exist
+
+## Output
+
+Report: `file — issue — fix`
 
 Do not ask for confirmation. Analyze and implement directly.
