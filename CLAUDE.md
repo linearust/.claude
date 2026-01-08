@@ -2,7 +2,19 @@
 
 > **⚠️ DO NOT MODIFY** unless explicitly ordered by the user.
 
-**Stack:** Axum • PostgreSQL + SQLx • Maud • HTMX + Tailwind CSS • tower-sessions
+---
+
+## Stack
+
+| Layer | Technology |
+|-------|------------|
+| Runtime | Tokio |
+| Web Framework | Axum |
+| Database | PostgreSQL + SQLx |
+| Templating | Maud |
+| Frontend | HTMX + Hyperscript + Tailwind CSS |
+| Sessions | tower-sessions |
+| Config Format | TOML |
 
 ---
 
@@ -46,6 +58,10 @@ Other types may be added as needed.
 - Path parameters: `/todos/{todo_id}`
 - Handler names: `method_[type_]resource_[param]`
 - Handler modules by route type
+
+### Client-Side Behavior
+
+Use Hyperscript for interactive behavior. Prefer declarative `_` attributes over JavaScript.
 
 ---
 
