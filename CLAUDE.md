@@ -42,6 +42,7 @@ Always use `ultrathink` for extended thinking on every task.
 - **Constants over magic** — named values, not literals
 - **Comments for AI** — minimal, explain why not what
 - **Centralized config** — no hardcoded paths
+- **Visual sections** — use dividers in config files (justfile, etc.)
 
 ---
 
