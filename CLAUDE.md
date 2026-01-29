@@ -16,11 +16,17 @@ Always use `ultrathink` for extended thinking on every task.
 |-------|------------|
 | Runtime | Tokio |
 | Web Framework | Axum |
-| Database | SurrealDB (SurrealKV) |
+| Database | SurrealDB |
 | Templating | Maud |
 | Frontend | HTMX + Hyperscript + Tailwind CSS |
 | Sessions | tower-sessions |
 | Config Format | TOML |
+
+---
+
+## Database
+
+- Prefer SurrealDB native methods (e.g., SurrealKV, SurrealQL) over external adapters
 
 ---
 
