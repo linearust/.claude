@@ -27,6 +27,7 @@ Always use `ultrathink` for extended thinking on every task.
 ## Database
 
 - Prefer SurrealDB native methods (e.g., SurrealKV, SurrealQL) over external adapters
+- Use official Rust SDK (`surrealdb` crate) with serde — no separate ORM needed
 
 ---
 
