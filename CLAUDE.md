@@ -39,6 +39,7 @@ Always use `ultrathink` for extended thinking on every task.
 | Single standard | One way per use case |
 | Single source of truth | Define once, reference everywhere |
 | Latest versions | Prefer newest stable releases and modern patterns |
+| No workarounds | Fix root causes, not symptoms — workarounds accumulate risk |
 
 ---
 
