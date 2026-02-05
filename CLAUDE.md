@@ -72,7 +72,7 @@ Other types may be added as needed.
 
 - RESTful methods: GET, POST, DELETE, PATCH, PUT
 - Path parameters: `/todos/{todo_id}`
-- Handler names: `method_[type_]resource_[param]`
+- Handler names mirror URL: `get_root`, `post_forms_session`, `post_actions_gimbal_pan`
 - Handler modules by route type
 
 ---
